@@ -61,13 +61,27 @@ public class Main {
         int k = b*b -(4*a*c)/(2*a);
         System.out.println(k);
 
+        //Increment and Decrement Operator
+        //I guess pre increment(++i) can be used or valid if value is getting assigned somewhere else and have to pass the value
         int i =0;
+        int j=++i;
+        System.out.println(i);
+        System.out.println(j);
 
-        while(i<10) {
-            i++;
-            System.out.println(i);
+        int y =7;
+        int x = y++*8;
+        System.out.println(x);
 
-        }
-        assert i ==10:"Did not happened";
+        charIncrement('z');
+    }
+
+    //Program to test character arthimetic operations
+    public static void charIncrement(char a) {
+        System.out.println(++a);
+        System.out.println(a++);
+
+        a='A';
+        System.out.println(--a);
+        System.out.println(a--);
     }
 }

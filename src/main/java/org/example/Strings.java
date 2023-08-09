@@ -46,7 +46,7 @@ public class Strings {
 
         System.out.println(nameForTesting.charAt(2)); //This checks and return what character is stored for given index number.
 
-        System.out.println(nameForTesting.indexOf("yh")); //Returns index number for provided string.
+        System.out.println(nameForTesting.indexOf("yh")); //Returns index number for provided string. Will provide index of 1st substring from the string
 
         System.out.println(nameForTesting.indexOf("s",3)); //Returns index number for provided string, starting the search from Index number given
 
@@ -57,5 +57,7 @@ public class Strings {
         System.out.println(nameForTesting.equals("AYUSH")); //Provide boolean expression if string is equal to provided string or not.
 
         System.out.println(nameForTesting.equalsIgnoreCase("ayush")); //Provide boolean expression if string is equal to provided string or not ignoring cases.
+
+        // If result is not successful for string then it will return -1
     }
 }

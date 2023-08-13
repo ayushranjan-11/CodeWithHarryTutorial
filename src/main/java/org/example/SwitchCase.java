@@ -13,6 +13,8 @@ public class SwitchCase {
         }
 
         ArithmeticOperations(scr,arithmeticSign);
+
+
     }
     public static void ArithmeticOperations(Scanner scr,String sign) {
 
@@ -42,4 +44,5 @@ public class SwitchCase {
             default -> System.out.println("Please provide only basic arithmetic operation sign");
         }
     }
+
 }

@@ -5,15 +5,20 @@ import java.util.Scanner;
 public class PractiseSet {
     public static void main(String[] args) {
 
+        Scanner scr = new Scanner(System.in);
+
 //        expressionSolution();
 //        characterArithmeticOperations();
 //        inputCheckAndCompare();
 
-        //String practise papers
-        stringLowerCaseAndUpperCase("abcd");
-        spaceReplaceInStringWithUnderscore("ayush ranjan is coding");
-        replaceStaticLetterWithName("Testing");
-        findDoubleAndTripleSpaceInString();
+//        //String practise papers
+//        stringLowerCaseAndUpperCase("abcd");
+//        spaceReplaceInStringWithUnderscore("ayush ranjan is coding");
+//        replaceStaticLetterWithName("Testing");
+//        findDoubleAndTripleSpaceInString();
+
+        //Switch practise paper
+        studentPassFailExercise(scr);
     }
     public static void expressionSolution() {
         float a = (float) 7 /4*9/2;
@@ -69,5 +74,32 @@ public class PractiseSet {
         System.out.println(text.indexOf("  "));
         System.out.println(text.indexOf("   "));
         //indexOf return first value if occurred and ignore other/next to the 1st appearance.
+    }
+
+    public static void studentPassFailExercise(Scanner scr) {
+        /*
+        3 subject input
+        Every subject marks should be at least 33% to pass and 40% total
+        */
+        int subject1Marks = 0, subject2Marks = 0, subject3Marks = 0;
+        System.out.println("Please provide marks for 1st subject");
+        if(scr.hasNextInt()) {
+
+            subject1Marks=scr.nextInt();
+
+            System.out.println("Please provide marks for 2nd subject");
+            subject2Marks=scr.nextInt();
+
+            System.out.println("Please provide marks for 3rd subject");
+            subject3Marks=scr.nextInt();
+
+        } else System.out.println("Please check your input and try again");
+        scr.close();
+        int overallAverage = (subject1Marks+subject2Marks+subject3Marks)/3;
+        if(subject1Marks>=33 && subject2Marks>=33 && subject3Marks>=33) {
+            if(overallAverage>=40) {
+                System.out.println("PASS");
+            } else System.out.println("Overall average is: "+overallAverage+ " which is less than 40%");
+        } else System.out.println("FAIL");
     }
 }

@@ -21,7 +21,8 @@ public class PractiseSet {
         //studentPassFailExercise(scr);
         //incomeTaxCalculation(scr);
         //dayOfTheWeek(scr);
-        leapYearCheck(scr);
+        //leapYearCheck(scr);
+        domainCheck(scr);
     }
     public static void expressionSolution() {
         float a = (float) 7 /4*9/2;
@@ -181,9 +182,27 @@ public class PractiseSet {
         if(((year%4==0) && (year% 100!=0) || (year%400 == 0))) {
             System.out.println(year+" is a Leap Year");
         } else System.out.println(year+" is not a Leap Year");
+
+        /* To check Leap year is:
+         *   1. It should get divided by 4 and have remainder 0
+         *       also when dividing the number with 100 it should not have reminder as 0,
+         *      or it should have reminder 0 when dividing with 400*/
     }
-    /* To check Leap year is:
-    *   1. It should get divided by 4 and have remainder 0
-    *       also when dividing the number with 100 it should not have reminder as 0,
-    *      or it should have reminder 0 when dividing with 400*/
+
+    public static void domainCheck(Scanner scanner) {
+        System.out.println("Please provide the url");
+        String url = null;
+
+        if (scanner.hasNext()) {
+            url = scanner.next();
+
+            if (url.endsWith(".com")) {
+                System.out.println("It's a commercial website");
+            } else if (url.endsWith(".org")) {
+                System.out.println("It's a organization website");
+            } else if (url.endsWith(".in")) {
+                System.out.println("It's an Indian website");
+            } else System.out.println("Please provide correct input");
+        }
+    }
 }

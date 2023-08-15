@@ -18,7 +18,10 @@ public class PractiseSet {
 //        findDoubleAndTripleSpaceInString();
 
         //Switch practise paper
-        studentPassFailExercise(scr);
+        //studentPassFailExercise(scr);
+        //incomeTaxCalculation(scr);
+        //dayOfTheWeek(scr);
+        leapYearCheck(scr);
     }
     public static void expressionSolution() {
         float a = (float) 7 /4*9/2;
@@ -102,4 +105,85 @@ public class PractiseSet {
             } else System.out.println("Overall average is: "+overallAverage+ " which is less than 40%");
         } else System.out.println("FAIL");
     }
+
+    public static void incomeTaxCalculation(Scanner scanner) {
+        int income =0,category=0, tax=0;
+        System.out.println("Please provide your CTC");
+        if(scanner.hasNextInt()) {
+            income = scanner.nextInt();
+        } else System.out.println("Please provide input in numbers only");
+
+        if (income<=250000) {
+            category=1;
+        } else if (income>250000 && income<=500000) {
+            category=2;
+        } else if(income>500000 && income<=1000000) {
+            category=3;
+        } else if (income>1000000) {
+            category=4;
+        }
+
+        switch (category) {
+            case 1 : {
+                System.out.println("No income tax for this range");
+                break;
+            }
+            case 2 : {
+                tax+=0.05*(income-250000);
+                System.out.println("Net Income tax payable is "+tax);
+                break;
+            }
+            case 3 : {
+                tax+=0.05*(500000-250000);
+                tax+=0.20*(income-500000);
+                System.out.println("Net Income tax payable is "+tax);
+                break;
+            }
+            case 4 : {
+                tax+=0.05*(500000-250000);
+                tax+=0.20*(1000000-500000);
+                tax+=0.30*(income-1000000);
+                System.out.println("Net Income tax payable is "+tax);
+                break;
+            } default:
+                System.out.println("Something went wrong! please try again.");
+
+        }
+    }
+
+    public static void dayOfTheWeek(Scanner scanner) {
+        int numberProvided = 0;
+        System.out.println("Please provide number between 1 to 7 to know Day of the week");
+        if(scanner.hasNextInt()) {
+            numberProvided = scanner.nextInt();
+        } else System.out.println("Please check your input and try again.");
+        switch (numberProvided) {
+            case 1 -> {System.out.println("Sunday");}
+            case 2 -> {System.out.println("Monday");}
+            case 3 -> {System.out.println("Tuesday");}
+            case 4 -> {System.out.println("Wednesday");}
+            case 5 -> {System.out.println("Thursday");}
+            case 6 -> {System.out.println("Friday");}
+            case 7 -> {System.out.println("Saturday");}
+            default -> {
+                System.out.println("Wrong choice");
+            }
+        }
+    }
+
+    public static void leapYearCheck(Scanner scanner) {
+        System.out.println("Please provide year to check: ");
+        int year = 0;
+        if(scanner.hasNextInt()) {
+            year+= scanner.nextInt();
+        }
+
+        if(((year%4==0) && (year% 100!=0) || (year%400 == 0))) {
+            System.out.println(year+" is a Leap Year");
+        } else System.out.println(year+" is not a Leap Year");
+    }
+    /* To check Leap year is:
+    *   1. It should get divided by 4 and have remainder 0
+    *       also when dividing the number with 100 it should not have reminder as 0,
+    *      or it should have reminder 0 when dividing with 400*/
 }

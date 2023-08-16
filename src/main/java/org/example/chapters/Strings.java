@@ -1,4 +1,4 @@
-package org.example;
+package org.example.chapters;
 
 public class Strings {
     public static void main(String[] args) {

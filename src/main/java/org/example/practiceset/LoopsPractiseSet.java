@@ -4,8 +4,8 @@ public class LoopsPractiseSet {
     public static void main(String[] args) {
 
         // All the code written in this class can be more optimised if we can add input check.
-//        patternPrint();
-        evenNumbersAddition(4);
+        patternPrint();
+//        evenNumbersAddition(4);
 //        multiplicationTable(12);
 //        multiplicationTableInReverse(10);
 //        factorialOfNumber(5);

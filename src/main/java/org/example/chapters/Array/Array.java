@@ -1,4 +1,4 @@
-package org.example.chapters;
+package org.example.chapters.Array;
 
 public class Array {
     public static void main(String[] args) {
@@ -39,6 +39,12 @@ public class Array {
 
         for(int j = c.length-1; j>=0; j--) {
             System.out.println(c[j]);
+        }
+
+        System.out.println("This print is shown by using foreach loop");
+        for (int k: c
+             ) {
+            System.out.println(c[k] );
         }
     }
 }

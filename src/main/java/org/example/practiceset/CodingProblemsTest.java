@@ -1,4 +1,4 @@
-package org.example;
+package org.example.practiceset;
 
 import java.sql.Array;
 import java.util.ArrayList;

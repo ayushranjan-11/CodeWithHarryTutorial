@@ -2,9 +2,10 @@ package org.example.practiceset;
 
 public class ArrayPractiseSet {
     public static void main(String[] args) {
-        problemOne();
-        checkNumberPresentInArray(2);
-        averageMarksFromArray();
+//        problemOne();
+//        checkNumberPresentInArray(2);
+//        averageMarksFromArray();
+        arrayListReversal();
     }
 
     public static void problemOne() {
@@ -50,8 +51,37 @@ public class ArrayPractiseSet {
              ) {
             total+=subjectMarks;
         }
-        System.out.println(average= (float) total /5);
+        average= (float) total /5;
+        System.out.println(average);
     }
 
+    public static void addTwoMatrix() {
+        // will do this after understanding it properly
+    }
 
+    public static void arrayListReversal() {
+        //This program reverse the given array
+        int k =0;
+        int[] givenArray = new int[5];
+        int[] tempArray = new int[givenArray.length];
+        for(int i =0;i<givenArray.length;i++) {
+            givenArray[i]=3*i;
+        }
+//         To display array content
+        System.out.println("Array content are:");
+        for(int i =0;i<givenArray.length;i++) {
+            System.out.println(givenArray[i]);
+        }
+        for (int j = tempArray.length-1; j>=0; j--) {
+            if(k<givenArray.length) {
+                tempArray[j]=givenArray[k];
+                k++;
+            }
+        }
+
+        System.out.println("Content when reversed");
+        for(int l =0; l<tempArray.length; l++) {
+            System.out.println(tempArray[l]);
+        }
+    }
 }

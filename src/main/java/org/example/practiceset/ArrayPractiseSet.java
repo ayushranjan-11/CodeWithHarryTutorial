@@ -1,11 +1,16 @@
 package org.example.practiceset;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class ArrayPractiseSet {
     public static void main(String[] args) {
 //        problemOne();
 //        checkNumberPresentInArray(2);
 //        averageMarksFromArray();
-        arrayListReversal();
+//        arrayListReversal();
+//        maximumNumberInArray();
+        sortedArrayCheck();
     }
 
     public static void problemOne() {
@@ -83,5 +88,33 @@ public class ArrayPractiseSet {
         for(int l =0; l<tempArray.length; l++) {
             System.out.println(tempArray[l]);
         }
+    }
+
+    public static void maximumNumberInArray() {
+        int [] arrayList = {10, 43, 56, 11, 85, 23, 97};
+        int maximumNumberInArray=0;
+
+        for (int i =0;i<arrayList.length;i++) {
+            if(arrayList[i]>maximumNumberInArray) {
+                maximumNumberInArray=arrayList[i];
+            }
+        }
+        System.out.println(maximumNumberInArray);
+    }
+
+    public static void sortedArrayCheck() {
+        int[] arrayList = {10, 43, 56, 11, 85, 23, 97};
+        int tempNumber = 0;
+
+        for(int i=0;i< arrayList.length;i++) {
+            for(int j=i; j< arrayList.length-1;j++) {
+                if(arrayList[i]>arrayList[j]) {
+                    tempNumber= arrayList[i];
+                    arrayList[i]=arrayList[j];
+                    arrayList[j]=tempNumber;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arrayList));
     }
 }

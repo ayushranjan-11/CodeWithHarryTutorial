@@ -22,7 +22,8 @@ public class PractiseSet {
         //incomeTaxCalculation(scr);
         //dayOfTheWeek(scr);
         //leapYearCheck(scr);
-        domainCheck(scr);
+       // domainCheck(scr);
+        randomCodeSnippetCheck();
     }
     public static void expressionSolution() {
         float a = (float) 7 /4*9/2;
@@ -204,5 +205,12 @@ public class PractiseSet {
                 System.out.println("It's an Indian website");
             } else System.out.println("Please provide correct input");
         }
+    }
+
+    public static void randomCodeSnippetCheck(){
+        int x = 5;
+        int a = x++;
+        int y = ++x;
+        System.out.println(a+y);
     }
 }

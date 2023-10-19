@@ -127,7 +127,7 @@ public class ArrayPractiseSet {
         int[] arrayList = {10, 43, 56, 11, 85, 23, 97};
         int tempNumber = 0;
 
-        for(int i=0;i< arrayList.length;i++) {
+        for(int i=0;i< arrayList.length;i++) { //
             for(int j=i; j< arrayList.length-1;j++) {
                 if(arrayList[i]>arrayList[j]) {
                     tempNumber= arrayList[i];

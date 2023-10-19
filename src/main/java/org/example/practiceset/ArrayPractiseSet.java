@@ -107,6 +107,8 @@ public class ArrayPractiseSet {
         for(int l =0; l<tempArray.length; l++) {
             System.out.println(tempArray[l]);
         }
+
+        //todo do this program with array finding the center and dividing it half half and then reversing it.
     }
 
     public static void maximumNumberInArray() {

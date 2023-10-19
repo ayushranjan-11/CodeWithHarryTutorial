@@ -8,9 +8,10 @@ public class ArrayPractiseSet {
 //        problemOne();
 //        checkNumberPresentInArray(2);
 //        averageMarksFromArray();
+        addTwoMatrix();
 //        arrayListReversal();
 //        maximumNumberInArray();
-        sortedArrayCheck();
+//        sortedArrayCheck();
     }
 
     public static void problemOne() {
@@ -36,6 +37,7 @@ public class ArrayPractiseSet {
 
             if (numbers[i]==searchNumber) {
                 System.out.println("Search number is present at "+i);
+                break;
             } else System.out.println(searchNumber +" is not present in the array");
         }
 
@@ -62,6 +64,23 @@ public class ArrayPractiseSet {
 
     public static void addTwoMatrix() {
         // will do this after understanding it properly
+        // Matrix is 2*3 size
+        int [][] doubleMat1 = {{1,2,3},{4,5,6}};
+        int [][] doubleMat2 = {{11,22,33},{44,55,66}};
+        int[][] totalMat = new int[2][3];
+
+        for (int i = 0;i< doubleMat1.length;i++) {
+            for (int j =0; j< doubleMat1[i].length; j++) {
+                totalMat[i][j] = doubleMat1[i][j] + doubleMat2[i][j];
+            }
+        }
+
+        for (int i = 0;i<2;i++) {
+            for (int j =0; j<3; j++) {
+                System.out.print(totalMat[i][j]+" ");
+            }
+            System.out.println();
+        }
     }
 
     public static void arrayListReversal() {

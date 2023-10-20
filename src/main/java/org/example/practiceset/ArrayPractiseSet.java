@@ -9,7 +9,7 @@ public class ArrayPractiseSet {
 //        checkNumberPresentInArray(2);
 //        averageMarksFromArray();
         addTwoMatrix();
-//        arrayListReversal();
+        arrayListReversal();
 //        maximumNumberInArray();
 //        sortedArrayCheck();
     }
@@ -86,7 +86,7 @@ public class ArrayPractiseSet {
     public static void arrayListReversal() {
         //This program reverse the given array
         int k =0;
-        int[] givenArray = new int[5];
+        int[] givenArray = new int[9];
         int[] tempArray = new int[givenArray.length];
         for(int i =0;i<givenArray.length;i++) {
             givenArray[i]=3*i;
@@ -94,7 +94,7 @@ public class ArrayPractiseSet {
 //         To display array content
         System.out.println("Array content are:");
         for(int i =0;i<givenArray.length;i++) {
-            System.out.println(givenArray[i]);
+            System.out.print(givenArray[i]+" ");
         }
         for (int j = tempArray.length-1; j>=0; j--) {
             if(k<givenArray.length) {
@@ -102,13 +102,33 @@ public class ArrayPractiseSet {
                 k++;
             }
         }
-
-        System.out.println("Content when reversed");
+        System.out.println("\nContent when reversed");
         for(int l =0; l<tempArray.length; l++) {
-            System.out.println(tempArray[l]);
+            System.out.print(tempArray[l]+" ");
         }
 
         //todo do this program with array finding the center and dividing it half half and then reversing it.
+
+        //Alternate way
+        /*
+        *  int [] arr = {1, 21, 3, 4, 5, 34, 67};
+        int l = arr.length;
+        int n = Math.floorDiv(l, 2);
+        int temp;
+
+        for(int i=0; i<n; i++){
+            // Swap a[i] and a[l-1-i]
+            // a   b   temp
+            // |4| |3| ||
+            temp = arr[i];
+            arr[i] = arr[l-i-1];
+            arr[l-i-1] = temp;
+        }
+
+        for(int element: arr){
+            System.out.print(element + " ");
+        }
+*/
     }
 
     public static void maximumNumberInArray() {

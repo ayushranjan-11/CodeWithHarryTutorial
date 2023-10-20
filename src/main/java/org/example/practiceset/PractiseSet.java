@@ -6,24 +6,26 @@ public class PractiseSet {
     public static void main(String[] args) {
 
         Scanner scr = new Scanner(System.in);
-
+//
 //        expressionSolution();
 //        characterArithmeticOperations();
 //        inputCheckAndCompare();
-
+//
 //        //String practise papers
 //        stringLowerCaseAndUpperCase("abcd");
 //        spaceReplaceInStringWithUnderscore("ayush ranjan is coding");
 //        replaceStaticLetterWithName("Testing");
 //        findDoubleAndTripleSpaceInString();
+//
+//        Switch practise paper
+//        studentPassFailExercise(scr);
+//        incomeTaxCalculation(scr);
+//        dayOfTheWeek(scr);
+//        leapYearCheck(scr);
+//        domainCheck(scr);
+//        randomCodeSnippetCheck();
+        randomCodeSnippetCheckTwo();
 
-        //Switch practise paper
-        //studentPassFailExercise(scr);
-        //incomeTaxCalculation(scr);
-        //dayOfTheWeek(scr);
-        //leapYearCheck(scr);
-       // domainCheck(scr);
-        randomCodeSnippetCheck();
     }
     public static void expressionSolution() {
         float a = (float) 7 /4*9/2;
@@ -212,5 +214,20 @@ public class PractiseSet {
         int a = x++;
         int y = ++x;
         System.out.println(a+y);
+    }
+
+    public static void randomCodeSnippetCheckTwo() {
+        int x =5;
+        int y = 7;
+
+        boolean result = (x>y) && (x++ < y--);
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(result);
+
+        /*Ayush, here your answer was 6,6, false which is not correct. The answer is 5,7 false.
+        Because under boolean result 1st value is only getting false then after that expression is breaking(short-circuit)
+        and that's why x++ or y-- is not affecting the original value.
+ */
     }
 }

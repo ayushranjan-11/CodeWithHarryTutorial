@@ -1,11 +1,12 @@
 package org.example.practiceset;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class PractiseSet {
     public static void main(String[] args) {
-
-        Scanner scr = new Scanner(System.in);
+//
+//        Scanner scr = new Scanner(System.in);
 //
 //        expressionSolution();
 //        characterArithmeticOperations();
@@ -24,7 +25,8 @@ public class PractiseSet {
 //        leapYearCheck(scr);
 //        domainCheck(scr);
 //        randomCodeSnippetCheck();
-        randomCodeSnippetCheckTwo();
+//        randomCodeSnippetCheckTwo();
+        randomCodeSnippetCheckThree();
 
     }
     public static void expressionSolution() {
@@ -230,4 +232,20 @@ public class PractiseSet {
         and that's why x++ or y-- is not affecting the original value.
  */
     }
+
+    public static void randomCodeSnippetCheckThree() {
+        try {
+            throw new Exception("Naveen");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+//        catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+        finally {
+            System.out.println("AutomationLabs");
+        }
+    }
+    /*The IOException e commented out section is the whole question, commented out the section because it will give
+    * error that excception is already handled above, so we don't have to handle that again*/
 }

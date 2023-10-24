@@ -26,8 +26,10 @@ public class PractiseSet {
 //        domainCheck(scr);
 //        randomCodeSnippetCheck();
 //        randomCodeSnippetCheckTwo();
-        randomCodeSnippetCheckThree();
-
+//        randomCodeSnippetCheckThree();
+        for (int i =2; i<=5; i++) {
+            tableWriting(i);
+        }
     }
     public static void expressionSolution() {
         float a = (float) 7 /4*9/2;
@@ -248,4 +250,17 @@ public class PractiseSet {
     }
     /*The IOException e commented out section is the whole question, commented out the section because it will give
     * error that excception is already handled above, so we don't have to handle that again*/
+
+
+    public static void tableWriting(int number) {
+        //Given number is for writing or creating the table.
+
+        if (number>0) {
+
+            for (int i=1; i<=10; i++) {
+                System.out.println(number+" * "+i+" = "+(number*i));
+            }
+            System.out.println();
+        } else System.out.println("Please provide number > 0");
+    }
 }

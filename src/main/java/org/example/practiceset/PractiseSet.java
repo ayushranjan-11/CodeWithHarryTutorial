@@ -251,7 +251,12 @@ public class PractiseSet {
     /*The IOException e commented out section is the whole question, commented out the section because it will give
     * error that excception is already handled above, so we don't have to handle that again*/
 
-
+    public static void randomCodeSnippetCheckFour() { //This method is for checking split method in strings
+        System.out.println("Hello World");
+        String pop = "xXHelloNaveenxXXAutomationXxXLabsXXxXJava";
+        String p[] = pop.split("xX");
+        System.out.println(p[0]+ ":"+p[0].length());
+    }
     public static void tableWriting(int number) {
         //Given number is for writing or creating the table.
 

@@ -1,5 +1,7 @@
 package org.example.practiceset;
 
+import org.example.chapters.InputCheck;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -27,9 +29,10 @@ public class PractiseSet {
 //        randomCodeSnippetCheck();
 //        randomCodeSnippetCheckTwo();
 //        randomCodeSnippetCheckThree();
-        for (int i =2; i<=5; i++) {
-            tableWriting(i);
-        }
+//        for (int i =2; i<=5; i++) {
+//            tableWriting(i);
+//        }
+
     }
     public static void expressionSolution() {
         float a = (float) 7 /4*9/2;

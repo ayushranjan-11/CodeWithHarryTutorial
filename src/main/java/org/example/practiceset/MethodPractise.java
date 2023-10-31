@@ -19,5 +19,14 @@ public class MethodPractise {
         int[]y = {1,2,3,4,5};
         method2(y);
         System.out.println(y[0]);
+
+        //Class Object logic test below
+        ArrayPractiseSet arrayPractiseSet = new ArrayPractiseSet();
+        ArrayPractiseSet arrayPractiseSet1 = arrayPractiseSet;
+
+        arrayPractiseSet1.ClassobjeectLogicTest();
+        arrayPractiseSet=null;
+        arrayPractiseSet1.ClassobjeectLogicTest();
+        //arrayPractiseSet.ClassobjeectLogicTest(); //This will provide NullPointerException as arrayPractiseSet was set to null.
     }
 }

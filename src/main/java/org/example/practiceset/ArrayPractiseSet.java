@@ -158,4 +158,8 @@ public class ArrayPractiseSet {
         }
         System.out.println(Arrays.toString(arrayList));
     }
+
+    public void ClassobjeectLogicTest() {
+        System.out.println("This method was called");
+    }
 }

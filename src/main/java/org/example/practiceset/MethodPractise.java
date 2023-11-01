@@ -30,18 +30,19 @@ public class MethodPractise {
         arrayPractiseSet1.ClassobjeectLogicTest();
         //arrayPractiseSet.ClassobjeectLogicTest(); //This will provide NullPointerException as arrayPractiseSet was set to null.
 
-        fibonacciSeries(10);
+        fibonacciSeries(17);
     }
 
     //Fibonacci series
     static void fibonacciSeries(int limit) {
-        int start=0, start1 = 1, calculation=0;
+        long start=0L, start1 = 1L;
+                long calculation=0L;
 
         for (int i= 0; i<limit; i++) {
             calculation+=start1;
             System.out.print(" "+calculation);
             start=start1;
-            start1=calculation;
+            start1= calculation;
             calculation=start;
         }
 

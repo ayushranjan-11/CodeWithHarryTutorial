@@ -1,9 +1,13 @@
 package org.example.practiceset;
 
-public class RecursionPractiseSet {
+public class Chapter7PractiseSet {
+    private static int sum = 0;
     public static void main(String[] args) {
-        fibonacciSeries(5);
-        multiplicationTable(2);
+//        fibonacciSeries(5);
+//        multiplicationTable(2);
+//        patterPrinting();
+        System.out.println(sumOfnNaturalNumbersRecursion(6));
+
     }
 
     static void fibonacciSeries(int position) {
@@ -33,5 +37,24 @@ public class RecursionPractiseSet {
                 System.out.println(number + " " + "* " + i + " = " + number * i);
             }
         } else System.out.println("Only positive which is > 0 will be calculated");
+    }
+
+    static void patterPrinting() {
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static int sumOfnNaturalNumbersRecursion(int n) {
+        if(n<=0) {
+            return sum;
+        }
+
+        sum += n;
+        sumOfnNaturalNumbersRecursion((n-1));
+        return sum;
     }
 }

@@ -6,13 +6,14 @@ public class Chapter7PractiseSet {
 //        fibonacciSeries(5);
 //        multiplicationTable(2);
 //        patterPrinting();
-        System.out.println(sumOfnNaturalNumbersRecursion(6));
+//        System.out.println(sumOfnNaturalNumbersRecursion(6));
+        System.out.println(fibonacciWithRecursion(6));
 
     }
 
     static void fibonacciSeries(int position) {
 
-        int start = 0, nextNumber = 1, end = 0;
+        int start = 0, nextNumber = 1, end;
         while(position>=0) {
             end = start+nextNumber;
             System.out.print(end+ " ");
@@ -23,12 +24,15 @@ public class Chapter7PractiseSet {
         System.out.println();
     }
 
-//    static void fibonacciWithRecursion(int lastNumber) {
-//        if(lastNumber<=0) {
-//            return;
-//        }
-//
-//    }
+    static int fibonacciWithRecursion(int lastNumber) {
+        if(lastNumber<=1) { //This returns the 1st number for fibonacci series, i.e "0"
+            return 0;
+        } else if(lastNumber ==2) { //This returns the 2nd number for fibonacci series, i.e "1"
+            return 1;
+        } else {
+        return fibonacciWithRecursion(lastNumber-1) + fibonacciWithRecursion(lastNumber - 2);
+    }
+        }
 
     public static void multiplicationTable(int number) {
         if (number>0) {

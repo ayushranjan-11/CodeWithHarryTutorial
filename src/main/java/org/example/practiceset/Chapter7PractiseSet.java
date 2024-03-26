@@ -7,7 +7,9 @@ public class Chapter7PractiseSet {
 //        multiplicationTable(2);
 //        patterPrinting();
 //        System.out.println(sumOfnNaturalNumbersRecursion(6));
-        System.out.println(fibonacciWithRecursion(6));
+        // System.out.println(fibonacciWithRecursion(6));
+        // System.out.println(reversePatternPrintingWithRecursion(5));
+        System.out.println(patternPrintingWithRecursion(5, 1));
 
     }
 
@@ -61,4 +63,43 @@ public class Chapter7PractiseSet {
         sumOfnNaturalNumbersRecursion((n-1));
         return sum;
     }
+
+    static String reversePatternPrintingWithRecursion(int limit) {
+        if (limit<=0) {
+            return "";
+        }
+        for(int i = limit; i>=1; i--) {
+            System.out.print("* ");
+        }
+        System.out.println();
+        return reversePatternPrintingWithRecursion(limit - 1);
+
+        /* 
+         This will print
+         *****
+         ****
+         ***
+         **
+         *
+        */
+    }
+
+    static String patternPrintingWithRecursion(int totalSize, int startNumber) {
+       if (totalSize<=0) {
+            return "";
+        }
+        for(int i = 0; i<startNumber; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+        return patternPrintingWithRecursion(totalSize-1, startNumber+1);
+        /* 
+         This will print
+        * 
+        * * 
+        * * * 
+        * * * * 
+        * * * * * 
+        */
+     }
 }

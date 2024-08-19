@@ -48,6 +48,7 @@ public class Main {
 
         }
         System.out.println("Average is: "+(total/validInputs));
+        inputMarks.close();
     }
 
     public int addNumbers(int a, int b) {

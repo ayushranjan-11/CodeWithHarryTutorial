@@ -1,6 +1,5 @@
-package org.example.practiceset;
+package org.example.practiceSet;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 

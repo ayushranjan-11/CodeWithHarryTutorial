@@ -1,4 +1,4 @@
-package org.example.practiceset;
+package org.example.practiceSet;
 
 import java.util.Random;
 import java.util.Scanner;

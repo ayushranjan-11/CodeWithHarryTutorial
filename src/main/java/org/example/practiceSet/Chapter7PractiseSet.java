@@ -1,4 +1,4 @@
-package org.example.practiceset;
+package org.example.practiceSet;
 
 public class Chapter7PractiseSet {
     private static int sum = 0;

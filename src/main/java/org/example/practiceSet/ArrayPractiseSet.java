@@ -1,7 +1,6 @@
-package org.example.practiceset;
+package org.example.practiceSet;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class ArrayPractiseSet {
     public static void main(String[] args) {

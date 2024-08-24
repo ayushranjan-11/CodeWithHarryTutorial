@@ -1,4 +1,4 @@
-package org.example.practiceset;
+package org.example.practiceSet;
 
 public class LoopsPractiseSet {
     public static void main(String[] args) {

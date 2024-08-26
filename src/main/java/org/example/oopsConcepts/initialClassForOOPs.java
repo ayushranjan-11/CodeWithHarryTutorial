@@ -6,9 +6,9 @@ class EmployeeDetails {
     int employeeId;
 
     public void getEmployeeDetails() {
-        System.out.println("Name of the employee is "+name);
-        System.out.println("Employee working as "+designation);
-        System.out.println("Employee ID is "+employeeId);
+        System.out.println("Name of the employee is " + name);
+        System.out.println("Employee working as " + designation);
+        System.out.println("Employee ID is " + employeeId);
     }
 }
 

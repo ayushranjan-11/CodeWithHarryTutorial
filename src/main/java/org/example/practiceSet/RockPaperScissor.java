@@ -13,12 +13,11 @@ public class RockPaperScissor {
     public static void inputFromTheUserAndResult(Scanner scanner, Random random) {
         System.out.println("Please provide input from 1 to 3 where \n 1: Rock \n 2: Paper \n 3: Scissor");
         int userInput = 0;
-        if(scanner.hasNextInt()) {
-            if(scanner.nextInt()<=3) {
-                userInput = scanner.nextInt();
-
-                int computerChoice= random.nextInt(1,4);
-                System.out.println("Computer choose: "+computerChoice);
+        if (scanner.hasNextInt()) {
+            userInput = scanner.nextInt();
+            if (userInput >= 1 && userInput <= 3) {
+                int computerChoice = random.nextInt(1, 4);
+                System.out.println("Computer choose: " + computerChoice);
 
                 //Logic for the game
 //        if (userInput!=computerChoice) {
@@ -36,8 +35,8 @@ public class RockPaperScissor {
 //        } else System.out.println("Match is drawn");
 //
                 //2nd logic
-                if (userInput!=computerChoice) {
-                    if(userInput<=computerChoice || (userInput==3 && computerChoice == 1)) {
+                if (userInput != computerChoice) {
+                    if (userInput <= computerChoice || (userInput == 3 && computerChoice == 1)) {
                         System.out.println("Computer Won!");
                     } else System.out.println("You Won!!");
 

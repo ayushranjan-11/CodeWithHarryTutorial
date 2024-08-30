@@ -33,6 +33,10 @@ class AccessModifierForEmployee {
     private static int phoneNumber;
     private static String address;
 
+    /*
+    For getters and setters they have to have public as access modifier or else they will also be not able to call
+    outside of the class. To check this sentence, change access modifier for available methods below.
+    * */
     public static int getPhoneNumber() {
         return phoneNumber;
     }

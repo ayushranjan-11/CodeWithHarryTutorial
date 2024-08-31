@@ -1,4 +1,4 @@
-package org.example.chapters;
+package org.learning.chapters;
 
 public class Recursion {
     public static void main(String[] args) {

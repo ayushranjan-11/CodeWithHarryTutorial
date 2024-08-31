@@ -1,4 +1,4 @@
-package org.example;
+package org.learning;
 
 //This class id made for those problems which I had to look into provided solutions.
 public class CodingBatJava {
@@ -9,7 +9,7 @@ public class CodingBatJava {
 
         //System.out.println(sumOfnNaturalNumbers(2));
         //tableWithRecursion(tableOf, sum, limit);
-        reversePatternPrinting(5);
+
     }
 
     static int sumOfnNaturalNumbers(int range) {
@@ -29,17 +29,4 @@ public class CodingBatJava {
         tableWithRecursion(tableOf, numberForTable+1, limit);
     }
 
-    static void reversePatternPrinting(int sizeOfThePattern) {
-
-
-        if (sizeOfThePattern>=1) {
-            for (int i = 0; i<=sizeOfThePattern; i++) {
-                for(int j = sizeOfThePattern-i; j>=1; j--) {
-                    System.out.print("*");
-                }
-                System.out.println();
-            }
-        } else System.out.println("Minimum accepted number should be >=1 ");
-
-    }
 }

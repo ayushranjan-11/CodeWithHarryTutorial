@@ -1,4 +1,4 @@
-package org.example.practiceset;
+package org.learning.practiceSet;
 
 public class MethodPractise {
 

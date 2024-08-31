@@ -1,4 +1,4 @@
-package org.example.chapters;
+package org.learning.chapters;
 
 public class Methods {
 

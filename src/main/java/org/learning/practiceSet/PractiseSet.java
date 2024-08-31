@@ -1,8 +1,5 @@
-package org.example.practiceset;
+package org.learning.practiceSet;
 
-import org.example.chapters.InputCheck;
-
-import java.io.IOException;
 import java.util.Scanner;
 
 public class PractiseSet {

@@ -1,4 +1,4 @@
-package org.example.oopsConcepts;
+package org.learning.oopsConcepts;
 
 //This class was created for getters and setters learning along with available access modifier in JAVA
 public class AccessModifierAndGetterAndSetters {

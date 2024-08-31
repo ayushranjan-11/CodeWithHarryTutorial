@@ -1,4 +1,4 @@
-package org.example.oopsConcepts;
+package org.learning.oopsConcepts;
 
 class EmployeeDetails {
     String name;

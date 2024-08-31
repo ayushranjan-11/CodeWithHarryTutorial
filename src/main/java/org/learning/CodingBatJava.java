@@ -1,4 +1,4 @@
-package org.example;
+package org.learning;
 
 //This class id made for those problems which I had to look into provided solutions.
 public class CodingBatJava {

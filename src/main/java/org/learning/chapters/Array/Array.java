@@ -1,4 +1,4 @@
-package org.example.chapters.Array;
+package org.learning.chapters.Array;
 
 public class Array {
     public static void main(String[] args) {

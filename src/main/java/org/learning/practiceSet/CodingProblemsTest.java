@@ -1,4 +1,4 @@
-package org.example.practiceSet;
+package org.learning.practiceSet;
 
 import java.util.ArrayList;
 import java.util.Scanner;

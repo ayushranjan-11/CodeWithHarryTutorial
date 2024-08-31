@@ -1,6 +1,6 @@
-package org.example.practiceSet;
+package org.learning.practiceSet;
 
-import org.example.oopsConcepts.AccessModifierAndGetterAndSetters;
+import org.learning.oopsConcepts.AccessModifierAndGetterAndSetters;
 
 public class OOPsPractiseSet {
 

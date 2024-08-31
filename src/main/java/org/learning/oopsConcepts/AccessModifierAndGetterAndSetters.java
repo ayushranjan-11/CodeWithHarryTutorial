@@ -4,12 +4,13 @@ package org.learning.oopsConcepts;
 public class AccessModifierAndGetterAndSetters {
 
     public static void main(String[] args) {
-//        AccessModifierForEmployee accessModifierForEmployee = new AccessModifierForEmployee();
-//        accessModifierForEmployee.setPhoneNumber(1234567890);
-//        accessModifierForEmployee.setAddress("Unknown");
-//
-//        System.out.println(accessModifierForEmployee.getPhoneNumber());
-//        System.out.println(accessModifierForEmployee.getAddress());
+        // AccessModifierForEmployee accessModifierForEmployee = new
+        // AccessModifierForEmployee();
+        // accessModifierForEmployee.setPhoneNumber(1234567890);
+        // accessModifierForEmployee.setAddress("Unknown");
+        //
+        // System.out.println(accessModifierForEmployee.getPhoneNumber());
+        // System.out.println(accessModifierForEmployee.getAddress());
 
         AccessModifierForEmployee.setAddress("Address from static method");
         AccessModifierForEmployee.setPhoneNumber(920920920);
@@ -29,14 +30,21 @@ public class AccessModifierAndGetterAndSetters {
 
 class AccessModifierForEmployee {
 
-    //These private identifiers will not be accessible to other class directly so through getters and setter we can do such
+    /*
+     * These private identifiers will not be accessible to other class directly so
+     * through getters and setter we can do such
+     * by directly access means, making object of the class and trying to access the
+     * phoneNUmber or address
+     */
     private static int phoneNumber;
     private static String address;
 
     /*
-    For getters and setters they have to have public as access modifier or else they will also be not able to call
-    outside of the class. To check this sentence, change access modifier for available methods below.
-    * */
+     * For getters and setters they have to have public as access modifier or else
+     * they will also be not able to call
+     * outside of the class. To check this sentence, change access modifier for
+     * available methods below.
+     */
     public static int getPhoneNumber() {
         return phoneNumber;
     }

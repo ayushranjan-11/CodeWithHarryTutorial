@@ -19,31 +19,35 @@ public class RockPaperScissor {
                 int computerChoice = random.nextInt(1, 4);
                 System.out.println("Computer choose: " + computerChoice);
 
-                //Logic for the game
-//        if (userInput!=computerChoice) {
-//            if(userInput==1 && computerChoice==3) {
-//                System.out.println("Computer Won!");
-//            }
-//            else if(userInput==2 && computerChoice==3) {
-//                System.out.println("Computer Won!");
-//            }
-//            else if(userInput==3 && computerChoice==1) {
-//                System.out.println("Computer Won!");
-//            }
-//            else System.out.println("You Won!!");
-//
-//        } else System.out.println("Match is drawn");
-//
-                //2nd logic
+                // Logic for the game
+                // if (userInput!=computerChoice) {
+                // if(userInput==1 && computerChoice==3) {
+                // System.out.println("Computer Won!");
+                // }
+                // else if(userInput==2 && computerChoice==3) {
+                // System.out.println("Computer Won!");
+                // }
+                // else if(userInput==3 && computerChoice==1) {
+                // System.out.println("Computer Won!");
+                // }
+                // else System.out.println("You Won!!");
+                //
+                // } else System.out.println("Match is drawn");
+                //
+                // 2nd logic
                 if (userInput != computerChoice) {
                     if (userInput <= computerChoice || (userInput == 3 && computerChoice == 1)) {
                         System.out.println("Computer Won!");
-                    } else System.out.println("You Won!!");
+                    } else
+                        System.out.println("You Won!!");
 
-                } else System.out.println("Match is drawn");
+                } else
+                    System.out.println("Match is drawn");
 
-            } else System.out.println("Please choose number between provided range!");
-        } else System.out.println("Please check your input and provide number input from defined range only!");
+            } else
+                System.out.println("Please choose number between provided range!");
+        } else
+            System.out.println("Please check your input and provide number input from defined range only!");
         scanner.close();
 
     }

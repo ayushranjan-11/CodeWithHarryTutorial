@@ -28,9 +28,9 @@ class InnerClassForConstructor {
     }
 }
 
-//Also we can do multiple inner class in JAVA
+// Also we can do multiple inner class in JAVA
 class ConstructorWithValues {
-    //This class will have values and it will also be updated.
+    // This class will have values and it will also be updated.
 
     private int employeeSalary;
     private String employeeDesignation;
@@ -44,7 +44,7 @@ class ConstructorWithValues {
         employeeSalary = salaryInput;
     }
 
-    public int getSalary(){
+    public int getSalary() {
         return employeeSalary;
     }
 
@@ -52,18 +52,35 @@ class ConstructorWithValues {
         employeeDesignation = updatedDesignation;
     }
 
-    public String getCurrentDesignation(){
+    public String getCurrentDesignation() {
         return employeeDesignation;
     }
-    
+
 }
+
+class ConstructorWIthOverLoading {
+
+    // Below is the example how we can overload constructors. Constructors can also be overloaded.
+    //Both constructors can also be called in class
+    public ConstructorWIthOverLoading() {
+
+    }
+
+    public ConstructorWIthOverLoading(int n) {
+
+    }
+}
+
 public class Constructors {
 
     public static void main(String[] args) {
 
         InnerClassForConstructor innerClassForConstructor = new InnerClassForConstructor();
-        /*Here name and roll are getting prinited without even intializing or calling the setters,
-         as in constructors the values are set for them already */
+        /*
+         * Here name and roll are getting prinited without even intializing or calling
+         * the setters,
+         * as in constructors the values are set for them already
+         */
         System.out.println(innerClassForConstructor.getName());
         System.out.println(innerClassForConstructor.getRoll());
         innerClassForConstructor.setName("No argument constructor name display");
@@ -71,14 +88,16 @@ public class Constructors {
 
         System.out.println(innerClassForConstructor.getName());
         System.out.println(innerClassForConstructor.getRoll());
-        
-        //Constructor with values initialied class working
+
+        // Constructor with values initialied class working
         ConstructorWithValues constructorWithValues = new ConstructorWithValues(0, "null");
         constructorWithValues.setDesignation("null from set method");
         constructorWithValues.setSalary(0);
         System.out.println(constructorWithValues.getSalary());
         System.out.println(constructorWithValues.getCurrentDesignation());
 
-
+        //Constructor overloading
+        ConstructorWIthOverLoading constructorWIthOverLoading = new ConstructorWIthOverLoading();
+        ConstructorWIthOverLoading constructorWIthOverLoadingWithValues = new ConstructorWIthOverLoading(4);
     }
 }

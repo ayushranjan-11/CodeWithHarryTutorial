@@ -42,10 +42,8 @@ public class GuessTheNumberGame {
                     guessGame(guessNumber);
                 }
 
-            } else
-                System.out.println("Please try again with input > 0 & <=100");
-        } else
-            System.out.println("Please provide number input between 1 to 100");
+            } else System.out.println("Please try again with input > 0 & <=100");
+        } else System.out.println("Please provide number input between 1 to 100");
         // guessNumber.setGuess(totalGuessCount);
         takeInput.close();
     }

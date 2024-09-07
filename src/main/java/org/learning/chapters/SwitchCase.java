@@ -12,20 +12,21 @@ public class SwitchCase {
             arithmeticSign = scr.next();
         }
 
-        ArithmeticOperations(scr,arithmeticSign);
+        ArithmeticOperations(scr, arithmeticSign);
 
 
     }
-    public static void ArithmeticOperations(Scanner scr,String sign) {
 
-        int number1 = 0,number2=0,solution;
+    public static void ArithmeticOperations(Scanner scr, String sign) {
+
+        int number1 = 0, number2 = 0, solution;
         System.out.println("Please provide 1st number");
-        if(scr.hasNextInt()) {
-            number1+=scr.nextInt();
+        if (scr.hasNextInt()) {
+            number1 += scr.nextInt();
         }
         System.out.println("Please provide 2nd number");
         if (scr.hasNextInt()) {
-            number2+=scr.nextInt();
+            number2 += scr.nextInt();
         }
         scr.close();
         switch (sign) {

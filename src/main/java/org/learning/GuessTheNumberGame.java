@@ -16,8 +16,6 @@ public class GuessTheNumberGame {
 
     }
 
-    // TODO: User provided number compare to generated number and let user know large or small number from the generated number difference
-
     public static void guessGame(GuessNumber guessNumber) {
         Scanner takeInput = new Scanner(System.in);
         int userProvidedInput;

@@ -31,8 +31,9 @@ public class PractiseSet {
 //        }
 
     }
+
     public static void expressionSolution() {
-        float a = (float) 7 /4*9/2;
+        float a = (float) 7 / 4 * 9 / 2;
         System.out.println(a);
     }
 
@@ -46,9 +47,9 @@ public class PractiseSet {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input any Integer");
 
-        if(scanner.hasNextInt()) {
+        if (scanner.hasNextInt()) {
             int b = scanner.nextInt();
-            if(b>10) {
+            if (b > 10) {
                 System.out.println("Number is greater than 10");
             } else System.out.println("Provided number is small than 10");
         } else {
@@ -64,10 +65,10 @@ public class PractiseSet {
     }
 
     public static void spaceReplaceInStringWithUnderscore(String str1) {
-        if(str1.isBlank() || str1.isEmpty()) {
+        if (str1.isBlank() || str1.isEmpty()) {
             System.out.println("Please check your input");
         } else {
-            str1=str1.replace(" ","_");
+            str1 = str1.replace(" ", "_");
         }
         System.out.println(str1);
     }
@@ -94,66 +95,67 @@ public class PractiseSet {
         */
         int subject1Marks = 0, subject2Marks = 0, subject3Marks = 0;
         System.out.println("Please provide marks for 1st subject");
-        if(scr.hasNextInt()) {
+        if (scr.hasNextInt()) {
 
-            subject1Marks=scr.nextInt();
+            subject1Marks = scr.nextInt();
 
             System.out.println("Please provide marks for 2nd subject");
-            subject2Marks=scr.nextInt();
+            subject2Marks = scr.nextInt();
 
             System.out.println("Please provide marks for 3rd subject");
-            subject3Marks=scr.nextInt();
+            subject3Marks = scr.nextInt();
 
         } else System.out.println("Please check your input and try again");
         scr.close();
-        int overallAverage = (subject1Marks+subject2Marks+subject3Marks)/3;
-        if(subject1Marks>=33 && subject2Marks>=33 && subject3Marks>=33) {
-            if(overallAverage>=40) {
+        int overallAverage = (subject1Marks + subject2Marks + subject3Marks) / 3;
+        if (subject1Marks >= 33 && subject2Marks >= 33 && subject3Marks >= 33) {
+            if (overallAverage >= 40) {
                 System.out.println("PASS");
-            } else System.out.println("Overall average is: "+overallAverage+ " which is less than 40%");
+            } else System.out.println("Overall average is: " + overallAverage + " which is less than 40%");
         } else System.out.println("FAIL");
     }
 
     public static void incomeTaxCalculation(Scanner scanner) {
-        int income =0,category=0, tax=0;
+        int income = 0, category = 0, tax = 0;
         System.out.println("Please provide your CTC");
-        if(scanner.hasNextInt()) {
+        if (scanner.hasNextInt()) {
             income = scanner.nextInt();
         } else System.out.println("Please provide input in numbers only");
 
-        if (income<=250000) {
-            category=1;
-        } else if (income>250000 && income<=500000) {
-            category=2;
-        } else if(income>500000 && income<=1000000) {
-            category=3;
-        } else if (income>1000000) {
-            category=4;
+        if (income <= 250000) {
+            category = 1;
+        } else if (income > 250000 && income <= 500000) {
+            category = 2;
+        } else if (income > 500000 && income <= 1000000) {
+            category = 3;
+        } else if (income > 1000000) {
+            category = 4;
         }
 
         switch (category) {
-            case 1 : {
+            case 1: {
                 System.out.println("No income tax for this range");
                 break;
             }
-            case 2 : {
-                tax+=0.05*(income-250000);
-                System.out.println("Net Income tax payable is "+tax);
+            case 2: {
+                tax += 0.05 * (income - 250000);
+                System.out.println("Net Income tax payable is " + tax);
                 break;
             }
-            case 3 : {
-                tax+=0.05*(500000-250000);
-                tax+=0.20*(income-500000);
-                System.out.println("Net Income tax payable is "+tax);
+            case 3: {
+                tax += 0.05 * (500000 - 250000);
+                tax += 0.20 * (income - 500000);
+                System.out.println("Net Income tax payable is " + tax);
                 break;
             }
-            case 4 : {
-                tax+=0.05*(500000-250000);
-                tax+=0.20*(1000000-500000);
-                tax+=0.30*(income-1000000);
-                System.out.println("Net Income tax payable is "+tax);
+            case 4: {
+                tax += 0.05 * (500000 - 250000);
+                tax += 0.20 * (1000000 - 500000);
+                tax += 0.30 * (income - 1000000);
+                System.out.println("Net Income tax payable is " + tax);
                 break;
-            } default:
+            }
+            default:
                 System.out.println("Something went wrong! please try again.");
 
         }
@@ -162,17 +164,31 @@ public class PractiseSet {
     public static void dayOfTheWeek(Scanner scanner) {
         int numberProvided = 0;
         System.out.println("Please provide number between 1 to 7 to know Day of the week");
-        if(scanner.hasNextInt()) {
+        if (scanner.hasNextInt()) {
             numberProvided = scanner.nextInt();
         } else System.out.println("Please check your input and try again.");
         switch (numberProvided) {
-            case 1 -> {System.out.println("Sunday");}
-            case 2 -> {System.out.println("Monday");}
-            case 3 -> {System.out.println("Tuesday");}
-            case 4 -> {System.out.println("Wednesday");}
-            case 5 -> {System.out.println("Thursday");}
-            case 6 -> {System.out.println("Friday");}
-            case 7 -> {System.out.println("Saturday");}
+            case 1 -> {
+                System.out.println("Sunday");
+            }
+            case 2 -> {
+                System.out.println("Monday");
+            }
+            case 3 -> {
+                System.out.println("Tuesday");
+            }
+            case 4 -> {
+                System.out.println("Wednesday");
+            }
+            case 5 -> {
+                System.out.println("Thursday");
+            }
+            case 6 -> {
+                System.out.println("Friday");
+            }
+            case 7 -> {
+                System.out.println("Saturday");
+            }
             default -> {
                 System.out.println("Wrong choice");
             }
@@ -182,13 +198,13 @@ public class PractiseSet {
     public static void leapYearCheck(Scanner scanner) {
         System.out.println("Please provide year to check: ");
         int year = 0;
-        if(scanner.hasNextInt()) {
-            year+= scanner.nextInt();
+        if (scanner.hasNextInt()) {
+            year += scanner.nextInt();
         }
 
-        if(((year%4==0) && (year% 100!=0) || (year%400 == 0))) {
-            System.out.println(year+" is a Leap Year");
-        } else System.out.println(year+" is not a Leap Year");
+        if (((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))) {
+            System.out.println(year + " is a Leap Year");
+        } else System.out.println(year + " is not a Leap Year");
 
         /* To check Leap year is:
          *   1. It should get divided by 4 and have remainder 0
@@ -213,18 +229,18 @@ public class PractiseSet {
         }
     }
 
-    public static void randomCodeSnippetCheck(){
+    public static void randomCodeSnippetCheck() {
         int x = 5;
         int a = x++;
         int y = ++x;
-        System.out.println(a+y);
+        System.out.println(a + y);
     }
 
     public static void randomCodeSnippetCheckTwo() {
-        int x =5;
+        int x = 5;
         int y = 7;
 
-        boolean result = (x>y) && (x++ < y--);
+        boolean result = (x > y) && (x++ < y--);
         System.out.println(x);
         System.out.println(y);
         System.out.println(result);
@@ -249,21 +265,22 @@ public class PractiseSet {
         }
     }
     /*The IOException e commented out section is the whole question, commented out the section because it will give
-    * error that excception is already handled above, so we don't have to handle that again*/
+     * error that excception is already handled above, so we don't have to handle that again*/
 
     public static void randomCodeSnippetCheckFour() { //This method is for checking split method in strings
         System.out.println("Hello World");
         String pop = "xXHelloNaveenxXXAutomationXxXLabsXXxXJava";
-        String p[] = pop.split("xX");
-        System.out.println(p[0]+ ":"+p[0].length());
+        String[] p = pop.split("xX");
+        System.out.println(p[0] + ":" + p[0].length());
     }
+
     public static void tableWriting(int number) {
         //Given number is for writing or creating the table.
 
-        if (number>0) {
+        if (number > 0) {
 
-            for (int i=1; i<=10; i++) {
-                System.out.println(number+" * "+i+" = "+(number*i));
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(number + " * " + i + " = " + (number * i));
             }
             System.out.println();
         } else System.out.println("Please provide number > 0");

@@ -5,14 +5,15 @@ public class Strings {
         stringImmutableUnderstanding();
         stringCommonMethodsChecking();
     }
+
     public static void stringImmutableUnderstanding() {
         //Strings are immutable
         String ab = "Hello";
         String aa = ab;
-        ab= "Hillo";
+        ab = "Hillo";
         System.out.println(ab);
         //Format printing
-        System.out.printf("The strings are %s and %s", ab,aa);
+        System.out.printf("The strings are %s and %s", ab, aa);
         System.out.println();
         /*
         Substring index starts with 0
@@ -33,12 +34,12 @@ public class Strings {
 
         System.out.println(nameForTesting.substring(2)); //This will print string from index number of input till last of available string.
 
-        System.out.println(nameForTesting.substring(1,4)); //This will print string from start index to end index. (Start index is included but end index is excluded)
+        System.out.println(nameForTesting.substring(1, 4)); //This will print string from start index to end index. (Start index is included but end index is excluded)
 
-        System.out.println(nameForTesting.replace('a','B')); //This will replace the character in the string.(Will change for every character found in the string)
+        System.out.println(nameForTesting.replace('a', 'B')); //This will replace the character in the string.(Will change for every character found in the string)
         //We can also replace set of characters i.e String with replace function.
 
-        System.out.println(nameForTesting.replace("sh","js")); //This will replace the set of characters(string) in the string.(Will change for every character found in the string)
+        System.out.println(nameForTesting.replace("sh", "js")); //This will replace the set of characters(string) in the string.(Will change for every character found in the string)
 
         System.out.println(nameForTesting.startsWith("AY")); //Returns boolean after checking if string starts matches with provided set of characters.
 
@@ -48,11 +49,11 @@ public class Strings {
 
         System.out.println(nameForTesting.indexOf("yh")); //Returns index number for provided string. Will provide index of 1st substring from the string
 
-        System.out.println(nameForTesting.indexOf("s",3)); //Returns index number for provided string, starting the search from Index number given
+        System.out.println(nameForTesting.indexOf("s", 3)); //Returns index number for provided string, starting the search from Index number given
 
         System.out.println(nameForTesting.lastIndexOf("s")); //Provide last index of given string(If multiple are there, then it will provide index for last one.)
 
-        System.out.println(nameForTesting.lastIndexOf("s",2));//Provide last index of given string starting from given index and searching backward(If multiple are there, then it will provide index for last one.)
+        System.out.println(nameForTesting.lastIndexOf("s", 2));//Provide last index of given string starting from given index and searching backward(If multiple are there, then it will provide index for last one.)
 
         System.out.println(nameForTesting.equals("AYUSH")); //Provide boolean expression if string is equal to provided string or not.
 

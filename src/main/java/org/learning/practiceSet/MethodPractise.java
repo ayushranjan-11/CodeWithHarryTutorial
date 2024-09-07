@@ -3,7 +3,7 @@ package org.learning.practiceSet;
 public class MethodPractise {
 
     static void method1(int a) {
-        System.out.println(a+2);
+        System.out.println(a + 2);
     }
 
     static void method2(int[] b) {
@@ -16,7 +16,7 @@ public class MethodPractise {
         method1(x);
         System.out.println(x);
 
-        int[]y = {1,2,3,4,5};
+        int[] y = {1, 2, 3, 4, 5};
         method2(y);
         System.out.println(y[0]);
 
@@ -26,7 +26,7 @@ public class MethodPractise {
         ArrayPractiseSet arrayPractiseSet1 = arrayPractiseSet;
 
         arrayPractiseSet1.ClassobjeectLogicTest();
-        arrayPractiseSet=null;
+        arrayPractiseSet = null;
         arrayPractiseSet1.ClassobjeectLogicTest();
         //arrayPractiseSet.ClassobjeectLogicTest(); //This will provide NullPointerException as arrayPractiseSet was set to null.
 
@@ -35,15 +35,15 @@ public class MethodPractise {
 
     //Fibonacci series
     static void fibonacciSeries(int limit) {
-        long start=0L, start1 = 1L;
-                long calculation=0L;
+        long start = 0L, start1 = 1L;
+        long calculation = 0L;
 
-        for (int i= 0; i<limit; i++) {
-            calculation+=start1;
-            System.out.print(" "+calculation);
-            start=start1;
-            start1= calculation;
-            calculation=start;
+        for (int i = 0; i < limit; i++) {
+            calculation += start1;
+            System.out.print(" " + calculation);
+            start = start1;
+            start1 = calculation;
+            calculation = start;
         }
 
     }

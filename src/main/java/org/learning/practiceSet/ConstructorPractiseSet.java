@@ -25,7 +25,7 @@ class Cylinder {
     }
 
     public double baseArea() {
-        return Math.PI*radius*radius;
+        return Math.PI * radius * radius;
     }
 
     public double lateralSurface() {
@@ -42,6 +42,6 @@ public class ConstructorPractiseSet {
 
         System.out.println("Volume of the cyclinder is: " + cylinder.volumeOfCyclinder());
         System.out.println("Base Area of the cyclinder is: " + cylinder.baseArea());
-        System.out.println("Lateral surface for the cylinder is: "+ cylinder.lateralSurface());
+        System.out.println("Lateral surface for the cylinder is: " + cylinder.lateralSurface());
     }
 }

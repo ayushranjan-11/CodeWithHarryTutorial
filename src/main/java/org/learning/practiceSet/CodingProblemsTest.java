@@ -17,26 +17,26 @@ public class CodingProblemsTest {
         int[] ab = new int[0];
         ArrayList<Integer> numbersInput = null;
         System.out.println("Please define array size");
-        if(scanner.hasNextInt()) {
+        if (scanner.hasNextInt()) {
             limitOfNumberCount = scanner.nextInt();
             ab = new int[limitOfNumberCount];
 
             System.out.println("Now provide integer input in created array");
-             if(scanner.hasNextInt()) {
+            if (scanner.hasNextInt()) {
                 for (int i = 0; i < limitOfNumberCount; i++) {
                     ab[i] = scanner.nextInt();
                 }
             } else {
-                 System.out.println("Provided input was not valid. Try again!");
-                 arrayCreationAndIntegerInput();
-             }
+                System.out.println("Provided input was not valid. Try again!");
+                arrayCreationAndIntegerInput();
+            }
         } else {
             System.out.println("Please check your input and try again");
             arrayCreationAndIntegerInput();
         }
         scanner.close();
 
-        for (int j=0;j< ab.length;j++){
+        for (int j = 0; j < ab.length; j++) {
             System.out.println(ab[j]);
         }
     }

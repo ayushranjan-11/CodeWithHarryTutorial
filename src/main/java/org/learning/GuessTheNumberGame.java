@@ -9,7 +9,7 @@ public class GuessTheNumberGame {
 
         GuessNumber guessNumber = new GuessNumber();
         //System.out.println("Computer Generated no. was: " + guessNumber.getGeneratedRandomNumber());
-        System.out.println("Provide your input for guess");
+        System.out.println("Provide positive number input for guess below 100");
         guessGame(guessNumber);
         System.out.println("Computer Generated no. was: " + guessNumber.getGeneratedRandomNumber());
         System.out.println("Total number of guesses: " + guessNumber.getGuessCount());

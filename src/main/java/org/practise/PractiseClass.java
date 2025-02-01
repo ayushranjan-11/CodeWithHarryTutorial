@@ -1,6 +1,7 @@
 package org.practise;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class PractiseClass {
 
@@ -9,6 +10,8 @@ public class PractiseClass {
         int primitiveValue = 9;
         passingValue(array, primitiveValue);
         System.out.println(Arrays.toString(array) + " " + primitiveValue);
+        PractiseClass practiseClass = new PractiseClass();
+        practiseClass.scannerInputCheck();
     }
 
     public static void passingValue(int[] arrayInsideMethod, int primitiveValueInsideMethod) {
@@ -26,5 +29,24 @@ public class PractiseClass {
                    [5, 3, 4] 9
            Here on the above output array value is changed for both but int value varies
          * */
+    }
+
+    public void scannerInputCheck() {
+        //This method was written to check scanner value passed and value hold
+
+        System.out.println("Provide number input to check");
+        Scanner scanner = new Scanner(System.in); //System.in -> to get system input (if more way to pass input then check on internet)
+
+        if (scanner.hasNextInt()) {
+            int x = scanner.nextInt();
+            System.out.println("Input was number and it was: " + x);
+
+        } else if (scanner.hasNextLine()) {
+            String input = scanner.nextLine();
+            System.out.println("Input was sentence and it was: " + input);
+
+        } else {
+            System.out.println("Input was neither number or sentence");
+        }
     }
 }

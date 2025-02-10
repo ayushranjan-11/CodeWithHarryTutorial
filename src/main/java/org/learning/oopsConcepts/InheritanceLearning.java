@@ -15,5 +15,8 @@ class classInheritingClass extends InheritanceLearning {
     static void inheritanceCheck() {
         classInheritingClass classInheritingClass = new classInheritingClass();
         System.out.println(classInheritingClass.testString + " but was called from child class");
+        System.out.println("Now changing the string value in child class for the parent class variable");
+        classInheritingClass.testString = "made a modification on child class";
+        System.out.println(classInheritingClass.testString + " value changed from child class");
     }
 }

@@ -10,5 +10,6 @@ public class InputCheck {
 
     public static void checkingInput() {
         Scanner takingInput = new Scanner(System.in);
+        takingInput.close();
     }
 }
